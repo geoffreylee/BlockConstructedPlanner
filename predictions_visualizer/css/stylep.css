@@ -1,0 +1,26 @@
+#players td {
+	cursor: pointer;
+}
+
+#player-data-overlay-container {
+	float: right;
+	display: block;
+	width: 50%;
+	pointer-events: none;
+	height: 400px;
+}
+#aggregate-container {
+	display: none;
+	float:left;
+}
+
+#aggregate-container table {
+	display:inline;
+	margin-left:25px;
+}
+
+caption {
+	white-space: nowrap;
+	padding: 5px;
+	text-align: -webkit-left;
+}

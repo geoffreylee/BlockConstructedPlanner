@@ -1,0 +1,32 @@
+1 Arid Mesa
+4 Dig Through Time
+4 Faerie Conclave
+4 Fatestitcher
+4 Flooded Strand
+4 Gitaxian Probe
+1 Hallowed Fountain
+2 Island
+4 Izzet Charm
+4 Jeskai Ascendancy
+3 Lightning Bolt
+1 Mountain
+3 Path to Exile
+1 Plains
+3 Remand
+1 Sacred Foundry
+4 Scalding Tarn
+1 Seachrome Coast
+4 Serum Visions
+2 Steam Vents
+4 Thought Scour
+1 Treasure Cruise
+
+1 Deprive
+1 Elesh Norn, Grand Cenobite
+3 Gifts Ungiven
+1 Iona, Shield of Emeria
+1 Pact of Negation
+2 Swan Song
+2 Timely Reinforcements
+1 Unburial Rites
+3 Wear & Tear

@@ -1,0 +1,50 @@
+1	Delver of Secrets	blue	16%	4.0
+2	Ice-Fang Coatl	greenblue	13%	3.7
+3	Thought-Knot Seer	3colorless	11%	4.0
+4	Thalia, Guardian of Thraben	1white	12%	3.4
+5	Plague Engineer	2black	22%	1.8
+6	Knight of the Reliquary	1greenwhite	8%	3.8
+7	Reality Smasher	4colorless	8%	4.0
+8	Elvish Spirit Guide	2green	8%	3.8
+9	Dreadhorde Arcanist	1red	10%	3.0
+10	Snapcaster Mage	1blue	13%	2.2
+11	Griselbrand	4blackblackblackblack	9%	3.0
+12	Endless One	x	7%	4.0
+13	Eldrazi Mimic	2	7%	4.0
+14	Matter Reshaper	2colorless	7%	4.0
+15	Tarmogoyf	1green	7%	3.9
+16	Brazen Borrower	1blueblue	18%	1.4
+17	Noble Hierarch	green	8%	3.1
+18	Walking Ballista	xx	15%	1.7
+19	Simian Spirit Guide	2red	8%	3.1
+20	Mother of Runes	white	7%	3.5
+21	Uro, Titan of Nature's Wrath	1greenblue	17%	1.4
+22	Collector Ouphe	1green	21%	1.2
+23	Stoneforge Mystic	1white	7%	3.3
+24	Dark Confidant	1black	5%	3.9
+25	Baleful Strix	blueblack	6%	3.3
+26	Elvish Reclaimer	green	6%	3.1
+27	Scavenging Ooze	1green	17%	1.1
+28	Monastery Mentor	2white	8%	2.0
+29	Chancellor of the Annex	4whitewhitewhite	4%	4.0
+30	Emrakul, the Aeons Torn	15	6%	2.3
+31	Flickerwisp	1whitewhite	4%	3.3
+32	Tireless Tracker	2green	7%	2.0
+33	Dryad of the Ilysian Grove	2green	4%	3.4
+34	Primeval Titan	4greengreen	3%	3.9
+35	Recruiter of the Guard	2white	5%	2.4
+36	True-Name Nemesis	1blueblue	6%	2.1
+37	Ramunap Excavator	2green	6%	1.9
+38	Young Pyromancer	1red	6%	2.1
+39	Emry, Lurker of the Loch	2blue	3%	4.0
+40	Phyrexian Revoker	2	6%	2.0
+41	Hooting Mandrills	5green	6%	2.0
+42	Leovold, Emissary of Trest	blackgreenblue	9%	1.2
+43	Painter's Servant	2	3%	3.3
+44	Vampire Hexmage	blackblack	3%	3.9
+45	Faerie Macabre	1blackblack	6%	1.7
+46	Quirion Ranger	green	3%	4.0
+47	Heritage Druid	green	3%	4.0
+48	Elvish Visionary	1green	3%	4.0
+49	Wirewood Symbiote	green	3%	4.0
+50	Hogaak, Arisen Necropolis	5bgbg	3%	3.4

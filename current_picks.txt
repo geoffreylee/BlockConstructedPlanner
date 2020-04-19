@@ -1,0 +1,64 @@
+1	1	Kyle	Theros Beyond Death
+1	2	Kevin	Commander 2018
+1	3	Brad	Modern Horizons
+1	4	Jimmy	Mirrodin
+1	5	Geoff	Khans of Tarkir
+1	6	Justin	Innistrad
+1	7	Andy	Onslaught
+1	8	Andre	Zendikar
+2	9	Andre	Commander 2016
+2	10	Andy	War of the Spark
+2	11	Justin	Future Sight
+2	12	Geoff	New Phyrexia
+2	13	Jimmy	Worldwake
+2	14	Brad	Return to Ravnica
+2	15	Kevin	Champions of Kamigawa
+2	16	Kyle	Tempest
+3	17	Kyle	Mirage
+3	18	Kevin	Coldsnap
+3	19	Brad	Commander 2015
+3	20	Jimmy	Darksteel
+3	21	Geoff	Magic 2012
+3	22	Justin	Magic 2011
+3	23	Andy	Revised Edition
+3	24	Andre	Alliances
+4	25	Andre	Guilds of Ravnica
+4	26	Andy	Conspiracy: Take the Crown
+4	27	Justin	Urza's Legacy
+4	28	Geoff	Mercadian Masques
+4	29	Jimmy	Rise of the Eldrazi
+4	30	Brad	Throne of Eldraine
+4	31	Kevin	Fate Reforged
+4	32	Kyle	Ixalan
+5	33	Kyle	Magic 2010
+5	34	Kevin	Ice Age
+5	35	Brad	Fourth Edition
+5	36	Jimmy	Magic 2014
+5	37	Geoff	Conflux
+5	38	Justin	Fifth Edition
+5	39	Andy	Battlebond
+5	40	Andre	Dark Ascension
+6	41	Andre	Conspiracy
+6	42	Andy	Aether Revolt
+6	43	Justin	Sixth Edition
+6	44	Geoff	Ravnica Allegiance
+6	45	Jimmy	Oath of the Gatewatch
+6	46	Brad	Commander 2013
+6	47	Kevin	Dominaria
+6	48	Kyle	Judgment
+7	49	Kyle	Commander 2011
+7	50	Kevin	Dissension
+7	51	Brad	Core Set 2020
+7	52	Jimmy	Lorwyn
+7	53	Geoff	Shards of Alara
+7	54	Justin	Odyssey
+7	55	Andy	Morningtide
+7	56	Andre	
+8	57	Andre	
+8	58	Andy	
+8	59	Justin	
+8	60	Geoff	
+8	61	Jimmy	
+8	62	Brad	
+8	63	Kevin	
+8	64	Kyle	

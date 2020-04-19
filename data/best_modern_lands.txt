@@ -1,0 +1,50 @@
+1	Snow-Covered Island	30%	4.3
+2	Mountain (253)	28%	3.9
+3	Misty Rainforest	28%	3.2
+4	Flooded Strand	26%	3.3
+5	Scalding Tarn	21%	3.1
+6	Forest (254)	28%	2.3
+7	Wooded Foothills	25%	2.5
+8	Bloodstained Mire	20%	2.9
+9	Field of Ruin	16%	3.3
+10	Mystic Sanctuary	25%	2.1
+11	Polluted Delta	18%	2.8
+12	Verdant Catacombs	16%	3.2
+13	Breeding Pool	29%	1.7
+14	Urza's Mine (Tower)	12%	4.0
+15	Urza's Power Plant (Rock in Pot)	12%	4.0
+16	Urza's Tower (Plains)	12%	4.0
+17	Windswept Heath	14%	3.3
+18	Snow-Covered Forest	29%	1.6
+19	Stomping Ground	22%	2.1
+20	Island (251)	14%	2.9
+21	Cavern of Souls	18%	2.1
+22	Eldrazi Temple	9%	4.0
+23	Blackcleave Cliffs	8%	3.8
+24	Steam Vents	18%	1.6
+25	Swamp (252)	16%	1.8
+26	Blood Crypt	17%	1.5
+27	Horizon Canopy	9%	2.9
+28	Blast Zone	17%	1.4
+29	Overgrown Tomb	14%	1.7
+30	Castle Garenbrig	6%	3.6
+31	Sunbaked Canyon	9%	2.7
+32	Ghost Quarter	17%	1.4
+33	Snow-Covered Plains	17%	1.3
+34	Hallowed Fountain	18%	1.2
+35	Plains (250)	12%	1.8
+36	Arid Mesa	8%	2.7
+37	Temple Garden	16%	1.2
+38	Fiery Islet	11%	1.7
+39	Snow-Covered Mountain	11%	1.7
+40	Valakut, the Molten Pinnacle	8%	2.1
+41	Simic Growth Chamber	4%	3.6
+42	Unclaimed Territory	4%	4.0
+43	Watery Grave	9%	1.7
+44	Ancient Ziggurat	4%	4.0
+45	Wastes (183 - Full Art)	7%	2.0
+46	Waterlogged Grove	8%	1.8
+47	Sacred Foundry	9%	1.5
+48	Nurturing Peatland	9%	1.4
+49	Inspiring Vantage	3%	4.0
+50	Gemstone Mine	5%	2.7

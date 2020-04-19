@@ -1,0 +1,40 @@
+div {
+	display: inline-block;
+}
+table {
+	display: inline;
+	margin-left:25px;
+}
+caption {
+	white-space: nowrap;
+	padding: 5px;
+	text-align: -webkit-left;
+}
+tr { 
+	height:23px;
+}
+.unavailable {
+	color: red;
+}
+.owned {
+	color: green;
+}
+.temp_chosen {
+	color: green;
+}
+#total_deck_size{
+	display: block;
+}
+.basic {
+	color: grey;
+}
+.available {
+	cursor:pointer;
+}
+#player-container {
+	display: block !important;
+	width: 100%;
+	text-align: left;
+	font-size:25px;
+}
+

@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+	<title>Preduction Visualizer</title>
+	<meta charset = "UTF-8" />
+	<script src="js/jq.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/stylep.css">
+</head>
+<body>
+	<div id="players-container">
+		<table id="players"><tbody>
+		</tbody></table>
+	</div>
+	<div id="player-data-overlay-container">
+		<table id="player-details"><tbody>
+		</tbody></table>
+	</div>
+	<div id="predictions-container">
+		<table id="predictions"><tbody>
+		</tbody></table>
+	</div>
+	<div id="aggregate-container">
+	</div>
+
+	
+</body>
+<script src="js/total_predictions.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/players_picks.js"></script>
+<script src="js/card_index.js"></script>
+<script src="js/draw.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	drawPlayers();
+	var active_player; 
+	for(name in players_picks) {
+		var table_markup = '<table id=\"' + name + '-table\"><caption>' + name + '</caption><tbody></tbody></table>';
+		$('#aggregate-container').append(table_markup);
+	}
+
+	$('#players').on('click', 'td', function(event) {
+		drawPlayerData(event);
+		active_player = event['target'].id;
+	});
+
+	$('#predictions').on('click', 'td', function(event){
+		drawPlayerDetails(event, active_player);
+	});
+
+
+});
+</script>
+</html>

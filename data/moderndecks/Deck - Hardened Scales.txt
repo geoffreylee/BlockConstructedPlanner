@@ -1,0 +1,26 @@
+6 Forest
+2 Horizon Canopy
+2 Llanowar Reborn
+4 Inkmoth Nexus
+1 Phyrexia's Core
+1 Pendelhaven
+4 Darksteel Citadel
+4 Arcbound Worker
+4 Arcbound Ravager
+4 Hangarback Walker
+4 Walking Ballista
+1 Spellskite
+2 Metallic Mimic
+4 Mox Opal
+4 Ancient Stirrings
+4 Hardened Scales
+2 Throne of Geth
+2 Animation Module
+4 Welding Jar
+1 Dismember
+
+2 Dismember
+4 Grafdigger's Cage
+3 Damping Sphere
+2 Pithing Needle
+4 Nature’s Claim

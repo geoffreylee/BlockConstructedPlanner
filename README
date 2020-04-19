@@ -1,0 +1,42 @@
+	
+Initializing a new draftbot plan:
+Rules setup:
+	Edit the plaintext files in the rules directory: 
+	banlist.txt - input banned cards
+	setlist.txt - the name of all the legal sets (full names or this will cause problems)
+	and then the 3 official banlists from Wizards as they currently stand (in the obvious files)
+
+	Run make_machine_list.py and put the names of all the lists we just input; they will be parsed into json
+
+Generating database:
+	Next, go to the data directory
+	Run format.py on the spells and creatures txt files of each format
+	Run formatlands.py on the lands txt files of ecah format
+
+	return to the parent directory and run generatetoplegacydb.py and generatetopmoderndb.py
+	run generate_relevance_data.py
+
+Viewing the analyses:
+	Go to the analyses folder and run parse_setscores DO NOT SKIP THIS SET OR THE DATABASE CAN HAVE INCONSISTENCIES
+	Sorted.json for viewing
+
+Generating the CardIndex:
+	Populate the data/legacydecks and data/moderndecks with desired meta decks; primarily supports MTGGoldfish so make sure the lists are in that format; must be hand downloaded unfortunately bc they dont like giving deck info
+	run build_decks_db.py
+		- manually provide relative path to decks
+	run build_card_index.py
+		- if this takes over 10 minutes something may have lagged it out; cancel and try again
+	run calculate_clump_intersections.py (recursion based with pruning - TODO: whats the runtime complexity O(f(x))
+
+
+The project is fully ready for the next draft
+	Main features are 
+		- setclumpviewer.py (run first) 
+		- parse_setscores.py (run second)
+	Now we can freely use and reconfigure 
+		- sequencer.py takes a decklist and sequences your picks
+		- predict.py to predict other people's decks and generate data for the sets_visualizer
+
+
+Using the GUI:
+	Make sure you edit the me="Geoff" variable in sequence_visualizer/js/setup.js if you want to use someone else's perspective 
