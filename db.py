@@ -28,6 +28,14 @@ with open("analyses/clumpscores_db.json", "r") as clumpf:
 	clumpscoresdb = json.load(clumpf)
 	clumpf.close()
 
+with open("data/decktagsl.json") as dtlf:
+	decktagsl = json.load(dtlf)
+	dtlf.close()
+
+with open("data/decktagsm.json") as dtmf:
+	decktagsm = json.load(dtmf)
+	dtmf.close()
+
 # Programmatically read this maybe
 equivalencies_data = [
 	{"Scrubland", "Godless Shrine" },
@@ -65,6 +73,15 @@ def equivalentTo(name):
 
 def getTotalEquivalences():
 	return equivalencies_data
+
+def getDeckTags(fmt):
+	if fmt == "legacy":
+		return decktagsl
+	if fmt == "modern":
+		return decktagsm
+	if fmt == "all":
+		decktagsl.update(decktagsm)
+		return decktagsl
 
 def getCardIndex():
 	return cardindex

@@ -39,6 +39,11 @@ bviewer = dict()
 players_picks = dict()
 #print(picks_table[target_player])
 clumpscores = db.getClumpScores()
+legacy_decks = db.getTopLegacyDecks()
+modern_decks = db.getTopModernDecks()
+decktags = db.getDeckTags("all")
+player_decktags = dict()
+
 for target_player in players:
 
 	total_picks = [x[0] for x in picks_table[target_player]]
@@ -50,16 +55,11 @@ for target_player in players:
 			continue
 		else:
 			unavailable_picks = unavailable_picks + [x[0] for x in picks_table[other_player]]
-			
-	
-
-	legacy_decks = db.getTopLegacyDecks()
-	modern_decks = db.getTopModernDecks()
 
 	for deck in legacy_decks:
-		deck["format"] = "Legacy"
+		deck["format"] = "legacy"
 	for deck in modern_decks:
-		deck["format"] = "Modern"
+		deck["format"] = "modern"
 
 	total_decks = legacy_decks + modern_decks
 	cardindex = db.getCardIndex()
@@ -67,6 +67,7 @@ for target_player in players:
 	progress_data = dict()
 	#print(target_player + "'s Total Picks")
 	#print(total_picks)
+	tags_breakdown = dict()
 
 	for deck in total_decks:
 		progress = 0
@@ -81,6 +82,10 @@ for target_player in players:
 			# All basics are free but NOT snow basics
 			if utils.checkSnowSensitiveBasic(card['name']) == True:
 				progress += card['copies']
+				for tag in decktags[deck['name']]:
+					if tag not in tags_breakdown:
+						tags_breakdown[tag] = 0
+					tags_breakdown[tag] += 1#card['copies']
 				continue
 
 			actual_name = card['name']
@@ -93,6 +98,10 @@ for target_player in players:
 			# If its in one of the sets we havfe
 			if len(set(total_picks).intersection(insets))!= 0:
 				progress += card['copies']
+				for tag in decktags[deck['name']]:
+					if tag not in tags_breakdown:
+						tags_breakdown[tag] = 0
+					tags_breakdown[tag] += 1#card['copies']
 				continue
 			# we need the card
 			else:
@@ -128,6 +137,12 @@ for target_player in players:
 		entry = {"progress": progress, "total": total, "percent": float(progress/total), "blocked": blocked, "needed": viewer, "unavailable": cards_unavailable, "format": deck['format'], "list": deck['list']}
 		progress_data[deck['name']] = entry
 
+	sorted_tags_breakdown = collections.OrderedDict(sorted(tags_breakdown.items(), key= lambda x:x[1], reverse=True))
+	tviewer = dict()
+	for x in sorted_tags_breakdown:
+		e = sorted_tags_breakdown[x]
+		tviewer[x] = e
+	player_decktags[target_player] = tviewer
 
 	sorted_progress = collections.OrderedDict(sorted(progress_data.items(), key= lambda deckdata: deckdata[1]['progress'] - deckdata[1]['blocked'], reverse=True))
 
@@ -155,6 +170,9 @@ with open("total_predictions.json", "w") as ff:
 	ff.write(json.dumps(bviewer))
 	ff.close()
 
+with open("predictions_visualizer/js/deck_tags.js", "w") as dtf:
+	dtf.write("var deck_tags=" + json.dumps(player_decktags))
+	dtf.close()
 
 
 

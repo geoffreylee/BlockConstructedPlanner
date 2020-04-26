@@ -7,6 +7,24 @@ import time
 import matplotlib 
 import matplotlib.pyplot as plt
 
+def graph(xaxis, yaxis, scale, filename):
+	fig, ax = plt.subplots()
+	#plt.figure(figsize=(15,15))
+	xaxis = [x for x in sortedscores]
+	yaxis = [clumpscores[y]['max_clump_score'] for y in sortedscores]
+	ax.plot(xaxis, yaxis, marker = 'o', linewidth=1, markersize=2)
+	ax.set_yscale(scale)
+	for i,j in zip(xaxis, yaxis):
+	    #ax.annotate('%s)' %j, xy=(i,j), xytext=(30,0), textcoords='offset points')
+	    ax.annotate('%s' %i, xy=(i,j), fontsize=3, rotation=45)
+
+
+	plt.xticks(rotation=90)
+	plt.tick_params(axis='x', which='major', labelsize=3)
+	plt.tight_layout()
+	fig.savefig(filename)
+	return
+
 matplotlib.interactive(True)
 
 cardindex = db.getCardIndex()
@@ -68,9 +86,17 @@ sortedscores = collections.OrderedDict(sorted(clumpscores.items(), key=lambda mt
 mean = statistics.mean(maximum_contribution_array)
 sigma = statistics.stdev(maximum_contribution_array)
 
-fig, ax = plt.subplots()
-ax.plot([x for x in sortedscores], [clumpscores[y]['max_clump_score'] for y in sortedscores])
-fig.savefig("set_strengths.png")
+xaxis = [x for x in sortedscores]
+yaxis = [clumpscores[y]['max_clump_score'] for y in sortedscores]
+
+graph(xaxis, yaxis, 'linear', 'set_strengths_linear.png')
+graph(xaxis, yaxis, 'log', 'set_strengths_log.png')
+
+axaxis = xaxis[0:32]
+ayaxis = yaxis[0:32]
+
+graph(axaxis, ayaxis, 'linear', 'set_strengths_linear_abbreve.png')
+graph(axaxis, ayaxis, 'log', 'set_strengths_log_abbreve.png')
 
 normal, ax = plt.subplots()
 ax.hist([clumpscores[y]['max_clump_score'] for y in sortedscores], bins = 50, density = True)
