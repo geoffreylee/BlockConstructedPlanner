@@ -34,6 +34,37 @@ maximum_contribution_array = list()
 def maximumContribution(lambda_mtgset):
 	clumps = lambda_mtgset[1]['clumps']
 	maximum_contribution = 0.0
+	if len(clumps) == 0 and len(lambda_mtgset[1]['top_cards'])!=0 :
+		highest_frequency = 0.0
+		# If no clumps, just look through top cards
+		
+		for top_card in lambda_mtgset[1]['top_cards']:
+			weighted_contribution = 0.0
+			top_card_data = db.findTopCard(top_card)
+			
+			freq = top_card_data['frequency']
+			
+			eqs = db.equivalentTo(top_card)
+			insets = []
+			for e in eqs:
+				insets = insets + cardindex[e]['sets']
+			dilution = len(set(insets))
+
+			# We're just gonna assume its a 4 of and score it by the most played card
+			if freq > highest_frequency:
+				weighted_contribution = float(4.0/dilution)
+				highest_frequency = freq
+
+		# double weight for legacy top card
+		weighted_contribution *= 2
+		if weighted_contribution > maximum_contribution:
+			maximum_contribution = weighted_contribution
+
+		maximum_contribution_array.append(maximum_contribution)
+		lambda_mtgset[1]['max_clump_score'] = maximum_contribution
+		return maximum_contribution
+
+
 	for clump in clumps:
 		deckname = clump[1]
 		RELfmt = clump[2]
@@ -43,6 +74,7 @@ def maximumContribution(lambda_mtgset):
 		weighted_contribution = 0.0
 		highest_frequency = 0.0
 
+	
 		for card in family:
 			for c in deck['list']:
 				if c['name'] == card:

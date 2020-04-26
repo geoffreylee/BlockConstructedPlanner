@@ -51,6 +51,7 @@ equivalencies_data = [
 	{"Savannah", "Temple Garden"},
 	{"Swords to Plowshares", "Path to Exile"},
 	{"Preordain", "Serum Visions"},
+	{"Grafdigger's Cage", "Relic of Progenitus", "Surgical Extraction", "Leyline of the Void", "Rest in Peace"}
 ]
 
 
